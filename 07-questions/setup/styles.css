@@ -202,6 +202,7 @@ Questions
 }
 .question-title {
   display: flex;
+  flex-direction: column;
   justify-content: space-between;
   align-items: center;
   text-transform: capitalize;
@@ -231,8 +232,9 @@ Questions
   margin-bottom: 0;
 }
 /* hide text */
-/* .question-text {
+.question-text {
   display: none;
+  transition: 1s ease-in-out;
 }
 .show-text .question-text {
   display: block;
@@ -245,4 +247,4 @@ Questions
 }
 .show-text .plus-icon {
   display: none;
-} */
+}
