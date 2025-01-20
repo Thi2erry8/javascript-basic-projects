@@ -63,8 +63,14 @@ function addItem(e){
  }
   //clear items
    function clearItems(){
-    const items = document.querySelertorAll('.grocery-item');
-   }
+    const items = document.querySelectorAll('.grocery-item');
+    
+    if(items.lenght > 0){
+      items.forEach(function(item){
+        list.removeChild(item);
+      })
+    }
+  }
   //set back to default
  function setBackToDefault(){
     grocery.value = '';
