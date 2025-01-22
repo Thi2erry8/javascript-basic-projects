@@ -11,7 +11,6 @@ function carousel(){
     slides.forEach((slide)=>{
         let Bytimes = counter*100;
        slide.style.transform = `translateX(-${Bytimes}%)`;
-       
     });
  };
 
